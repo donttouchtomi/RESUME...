@@ -9,7 +9,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    p, li {
+
+    p,
+    li {
         font-family: "Montserrat", sans-serif;
     }
 }
@@ -23,53 +25,58 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        p {
+
+    p {
         font-family: "Cormorant Garamond", serif;
         font-size: 1.2rem;
         margin-left: 20px;
         color: #000000;
-        }
+    }
 
-        .nav {
+    .nav {
         display: flex;
         gap: 20px;
 
-            li {
+        li {
             list-style: none;
             gap: 10px;
             font-family: "Cormorant Garamond", serif;
-                a {
+
+            a {
                 color: #000000;
                 text-decoration: none;
                 font-size: 1rem;
-                }
             }
         }
+    }
 }
 
 .header_section {
     padding-top: 200px;
     padding-left: 20px;
     padding-right: 20px;
-        h1 {
+
+    h1 {
         font-size: 3rem;
-        }
+    }
 
-        #role {
+    #role {
         font-size: 1.8rem;
-        }
+    }
 
-        .contact_information {
-            list-style: none;
-            li {
+    .contact_information {
+        list-style: none;
+
+        li {
             font-size: 0.9rem;
             margin: 10px 0;
-                a {
+
+            a {
                 color: #000000;
                 margin: 0 5px;
-                }
             }
         }
+    }
 }
 
 .info_section {
@@ -83,25 +90,29 @@ body {
     }
 
     p {
-    font-size: 0.9rem;
-    line-height: 30px;
+        font-size: 0.9rem;
+        line-height: 30px;
     }
 }
 
-.skill, .achievements, .experience, .education {
+.skill,
+.achievements,
+.experience,
+.education {
     ul {
-    line-height: 30px;
-    font-size: 0.9rem;
-    list-style: none;
+        line-height: 30px;
+        font-size: 0.9rem;
+        list-style: none;
     }
 }
 
 .contact {
     b {
         p {
-        font-size: 0.9rem;
+            font-size: 0.9rem;
         }
     }
+
     p {
         a {
             color: black;
@@ -111,6 +122,7 @@ body {
 
 .footer {
     text-align: center;
+
     p {
         font-size: 0.9rem;
     }
@@ -118,6 +130,7 @@ body {
 
 .profile-pic-section {
     flex: 0 1 40vw;
+    /* width: 40vw; */
     height: 100vh;
     background-color: #af948b;
     position: fixed;
@@ -128,6 +141,18 @@ body {
     top: 0;
 
     img {
-    width: 50%;
+        width: 50%;
     }
+}
+
+@media (max-width: 1200px) {
+
+    body {
+        display: block;
+    }
+
+    body .profile-pic-section {
+        display: none;
+    }
+
 }
